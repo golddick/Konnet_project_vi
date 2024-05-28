@@ -75,7 +75,7 @@ export default function StreamGallery() {
           spaceBetween={5}
           thumbs={{ swiper: thumbsSwiper }}
           onSwiper={(swiper: SwiperType) => setSwiper(swiper)} 
-          className='h-96 w-full rounded-lg lg:w-[500px] lg:h-[500px] '
+          className='h-96 w-full rounded-lg lg:w-[500px] lg:h-[500px]  md:w-[400px]'
           // className={cn( !showNavigation && 'hidden')}
         >
           {TestImg.map((image, index) => (
