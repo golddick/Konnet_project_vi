@@ -1,7 +1,7 @@
 import React from 'react'
-import { Input } from '../../../ui/input'
 import { SearchIcon } from 'lucide-react'
-import { Button } from '../../../ui/button'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 
 const Search = () => {
   return (
