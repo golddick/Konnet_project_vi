@@ -21,3 +21,13 @@ export const RegFormSchema = z.object({
     message: 'input your password',
   }),
 });
+
+
+// export const RegDashFormSchema = z.object({
+
+//   displayName: z.string(),
+
+//   password: z.string({
+//     message: 'input your password',
+//   }),
+// });

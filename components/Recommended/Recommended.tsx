@@ -18,8 +18,14 @@ const Recommended = () => {
     },[matches, onExpand])
 
   return (
-    <div className='flex flex-col h-[calc(100vh-100px)]  border-[#b28228] border-1 border-l pt-0 w-full '>
+    <div className=''>
         <RecommendedHeader/>
+          <div>
+           {/* <p className="font-semibold text-[#b28228] text-center "> h</p> */}
+
+          </div>
+
+      home
     </div>
   )
 }

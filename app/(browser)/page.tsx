@@ -10,11 +10,10 @@ export default function Home() {
   const {collapsed} = useChatSiderbar((state) => state)
   
   return (
-    <div className="  max-w-[1500px]x">
+    <div className=" ">
       
 
       <LandingPage/>
-      {/* <p>d</p> */}
 
     </div>
   );

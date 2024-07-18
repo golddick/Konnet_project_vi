@@ -5,7 +5,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 
 const ChatHeader = () => {
   return (
-    <div className="relative p-3 border-b flex items-center justify-between">
+    <div className="relative p-3 border-b flex items-center gap-10 ">
         <RegToggle/>
         <p className="font-semibold text-[#b28228] text-center">Stream Chat Room</p>
 
@@ -17,7 +17,7 @@ export default ChatHeader
 
 export const ChatHeaderSkeleton = () => {
     return (
-        <div className=" relative p-3 border-b">
+        <div className=" relative p-3 border-b flex items-center gap-10">
 
                 <Skeleton className="absolute h-6 w-6 left-3 top-3"/>
                 <Skeleton className="w-[200px] h-6 mx-auto"/>

@@ -10,6 +10,7 @@ import VideoCard from './VideoCard'
 import { MobileChatBox } from './MobileChatBox'
 import StreamDetails from './StreamDetails'
 import { Wrapper } from '@/lib/wrapper'
+import Example from '@/components/Analytic/Analystics'
 
 
 
@@ -31,9 +32,7 @@ const StreamInfo = ({stream}:StreamItemProps) => {
 
     <>
 
-
-
-<div className={cn(' grid  grid-cols-1 lg:grid   lg:grid-cols-[2fr_0.5fr]  md:grid md:grid-cols-[2fr_1fr] relative', collapsed && 'lg:grid-cols-1  max-w-[1500px] md:grid-cols-1' )} >
+<div className={cn(' grid-cols-1 lg:grid  h-full  lg:grid-cols-[2fr_1fr]    md:grid md:grid-cols-[2fr_1fr] relative', collapsed && 'lg:grid-cols-1  md:grid-cols-1' )} >
 
 {
       collapsed && ( 
@@ -42,18 +41,18 @@ const StreamInfo = ({stream}:StreamItemProps) => {
         </div>
       )
     }
+
+    <div className="  overflow-scroll hidden-scrollbar  w-full ">
     
-    <div className="  space-y-4 col-span-1  w-full  lg:overflow-y-auto hidden-scrollbar">
-      <VideoCard img={linkImg} isLive={true}/>
-      <div className='flex md:hidden lg:hidden px-4'>
+    <VideoCard img={linkImg} isLive={true}/>
+    <div className='flex md:hidden lg:hidden px-4 mt-4'>
         <MobileChatBox/>
       </div>
+      <StreamDetails/>
 
-        <StreamDetails/>
-    
     </div>
-    <div className={cn('col-span-1 w-full  h-full  hidden   md:block  ', collapsed && 'hidden  md:hidden', !collapsed && 'lg:block ') }>
-        <StreamChat/>
+    <div className={cn('col-span-1 w-full border-[#b28228] border-1 border-l  hidden   md:block  ', collapsed && 'hidden  md:hidden', !collapsed && 'lg:block ') }>
+    <StreamChat/>
     </div>
 </div>
     

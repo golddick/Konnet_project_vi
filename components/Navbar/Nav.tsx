@@ -10,6 +10,7 @@ import SideDot from './_component/threedot/SideDot'
 import UserIcon from './_component/userIcon/UserIcon'
 import Search from './_component/Search/Search';
 import SideBar from '../SideBar/SideBar';
+import { DashBTN } from '@/app/(creatorDashboard)/_component/DashBTN';
 
 
 
@@ -44,15 +45,7 @@ const Nav = () => {
   <ModeToggle />
 
 
-{
-  isLoggedIN && (
-
-    <div className='flex gap-2  items-center cursor-pointer'>
-    <SquareDashedKanban  className='flex text-white'/>
-    <p className=' text-white hidden lg:block md:block'> Dashboard</p>
-    </div>
-  )
-}
+  <DashBTN/>
   
 
     <div className='flex items-center gap-2 lg:8 md:5'>

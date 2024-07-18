@@ -7,7 +7,6 @@ const RecommendedHeader = () => {
   return (
     <div className="relative p-3 border-b flex items-center justify-between">
         <RegToggle/>
-        <p className="font-semibold text-[#b28228] text-center">Recommended Stream</p>
 
     </div>
   )

@@ -16,7 +16,7 @@ const LandingPage = () => {
 <>
 
 
-<div className={cn(' grid-cols-1 lg:grid   lg:grid-cols-[2fr_0.5fr]  md:grid md:grid-cols-[2fr_1fr] relative', collapsed && 'lg:grid-cols-1  md:grid-cols-1' )} >
+<div className={cn('  grid-cols-1 lg:grid   lg:grid-cols-[2fr_0.5fr]  md:grid md:grid-cols-[2fr_1fr] relative', collapsed && 'lg:grid-cols-1  md:grid-cols-1' )} >
 
 {
       collapsed && ( 
@@ -26,10 +26,10 @@ const LandingPage = () => {
       )
     }
 
-    <div className="  h-[calc(100vh-100px)] w-full ">
+    <div className="  h-[100vh] overflow-scroll w-full hidden-scrollbar ">
         <StreamHome/>
     </div>
-    <div className={cn('col-span-1 w-full  h-full  hidden   md:block  ', collapsed && 'hidden  md:hidden', !collapsed && 'lg:block ') }>
+    <div className={cn('col-span-1 w-full  border-[#b28228] border-1 border-l  hidden   md:block  ', collapsed && 'hidden  md:hidden', !collapsed && 'lg:block ') }>
         <Recommended/>
         {/* <p>s</p> */}
     </div>

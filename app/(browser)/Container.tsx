@@ -8,7 +8,7 @@ import { useMediaQuery } from "usehooks-ts"
 
 interface ContainerProps {children: React.ReactNode};
 
-export const DashBoardContainer = ({children,}: ContainerProps) => {
+export const HomeContainer = ({children,}: ContainerProps) => {
     const deviceMatches = useMediaQuery('(max-width: 1500px)')
     const {collapsed,onCollapse,onExpand} = useChatSiderbar((state) => state)
 

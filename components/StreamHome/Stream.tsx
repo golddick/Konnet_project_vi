@@ -29,6 +29,45 @@ const Stream = () => {
       ],
       streamUrl: 'https://www.youtube.com/watch?v=PKov1mwpLfE',
     },
+    {
+      id: '2',
+      streamName: 'Stream 2',
+      description: 'Description of Stream 2',
+      specialAttendees: ['Attendee A', 'Attendee B', 'Attendee C'],
+      thumbNailImg:'https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg',
+      eventGallery: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6ybM-o2Sp2MFlG7VN1lQMaDzygC38g1Z9Bl5bDNr8sjMZIHtGiqpKYze-Fe5zHoRQxI&usqp=CAU',
+        'https://imgv3.fotor.com/images/slider-image/Female-portrait-picture-enhanced-with-better-clarity-and-higher-quality-using-Fotors-free-online-AI-photo-enhancer.jpg',
+        'https://deep-image.ai/app/static/media/app-info-generator.7c28e12e7446aa7894d0.webp',
+      ],
+      streamUrl: 'https://www.youtube.com/watch?v=PKov1mwpLfE',
+    },
+    {
+      id: '2',
+      streamName: 'Stream 2',
+      description: 'Description of Stream 2',
+      specialAttendees: ['Attendee A', 'Attendee B', 'Attendee C'],
+      thumbNailImg:'https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg',
+      eventGallery: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6ybM-o2Sp2MFlG7VN1lQMaDzygC38g1Z9Bl5bDNr8sjMZIHtGiqpKYze-Fe5zHoRQxI&usqp=CAU',
+        'https://imgv3.fotor.com/images/slider-image/Female-portrait-picture-enhanced-with-better-clarity-and-higher-quality-using-Fotors-free-online-AI-photo-enhancer.jpg',
+        'https://deep-image.ai/app/static/media/app-info-generator.7c28e12e7446aa7894d0.webp',
+      ],
+      streamUrl: 'https://www.youtube.com/watch?v=PKov1mwpLfE',
+    },
+    {
+      id: '2',
+      streamName: 'Stream 2',
+      description: 'Description of Stream 2',
+      specialAttendees: ['Attendee A', 'Attendee B', 'Attendee C'],
+      thumbNailImg:'https://www.freecodecamp.org/news/content/images/2022/02/arrows-2889040_1920.jpg',
+      eventGallery: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6ybM-o2Sp2MFlG7VN1lQMaDzygC38g1Z9Bl5bDNr8sjMZIHtGiqpKYze-Fe5zHoRQxI&usqp=CAU',
+        'https://imgv3.fotor.com/images/slider-image/Female-portrait-picture-enhanced-with-better-clarity-and-higher-quality-using-Fotors-free-online-AI-photo-enhancer.jpg',
+        'https://deep-image.ai/app/static/media/app-info-generator.7c28e12e7446aa7894d0.webp',
+      ],
+      streamUrl: 'https://www.youtube.com/watch?v=PKov1mwpLfE',
+    },
   ];
 
   return (

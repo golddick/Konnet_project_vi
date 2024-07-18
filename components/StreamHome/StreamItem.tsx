@@ -19,7 +19,7 @@ interface StreamItemProps {
 const StreamItem = ({ stream }: StreamItemProps) => {
   return (
     <Link href={`/StreamProfile/${stream.streamName}`}>
-      <div className='  w-full space-y-4'>
+      <div className='  w-full space-y-4 Container'>
         <ThumbnailCard img={stream.thumbNailImg} isLive={true} />
 
         <div className='flex gap-x-3'>

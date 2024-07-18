@@ -11,11 +11,9 @@ const Page = () => {
   const streamData = [{}];
 
   return (
-    <>
-    {/* <Wrapper> */}
+    <div className=''>
       <StreamInfo stream={streamData} />
-    {/* </Wrapper> */}
-    </>
+    </div>
   );
 };
 

@@ -21,4 +21,4 @@ export const useChatSiderbar = create<ChatSiderbarStore>((set) => ({
     onCollapse: () => set(() => ({collapsed: true})),
     variant:ChatVariant.RECOMMENDED,
     onChangeVariant:(variant:ChatVariant) => set(() =>  ({ variant}))
-}))
+})) 

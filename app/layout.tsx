@@ -28,7 +28,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-        <main className="flex-1   max-w-screen-2xl mx-auto" >{children}</main>
+        <main className="flex-1   max-w-[1500px]   mx-auto" >{children}</main>
         </ThemeProvider>
 
         </body>

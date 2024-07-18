@@ -14,7 +14,7 @@ const UserIcon = ({isLive,isLoggedIN}:UserIconProps) => {
 
     {
       isLoggedIN && (
-        <div className={cn('flex items-center lg:block' , isLive && 'border-2 border-red-500 rounded-full ')}>
+        <div className={cn('flex w-10 h-10  justify-center items-center lg:block' , isLive && 'border-2  lg:justify-center lg:w-[40px] lg:h-[40px] border-red-500 lg:flex rounded-full ')}>
         <Avatar>
         <AvatarImage src="https://github.com/shadcn.png" />
         <AvatarFallback>CN</AvatarFallback>
