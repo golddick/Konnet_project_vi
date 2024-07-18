@@ -32,7 +32,7 @@ const StreamInfo = ({stream}:StreamItemProps) => {
 
     <>
 
-<div className={cn(' grid-cols-1 lg:grid  h-full  lg:grid-cols-[2fr_1fr]    md:grid md:grid-cols-[2fr_1fr] relative', collapsed && 'lg:grid-cols-1  md:grid-cols-1' )} >
+<div className={cn(' grid-cols-1 lg:grid  lg:grid-cols-[2fr_0.5fr]    md:grid md:grid-cols-[2fr_1fr] relative', collapsed && 'lg:grid-cols-1  md:grid-cols-1' )} >
 
 {
       collapsed && ( 
@@ -42,7 +42,7 @@ const StreamInfo = ({stream}:StreamItemProps) => {
       )
     }
 
-    <div className="  overflow-scroll hidden-scrollbar  w-full ">
+    <div className="  overflow-scroll hidden-scrollbar  w-full  ">
     
     <VideoCard img={linkImg} isLive={true}/>
     <div className='flex md:hidden lg:hidden px-4 mt-4'>

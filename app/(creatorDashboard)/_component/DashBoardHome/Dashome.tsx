@@ -17,7 +17,7 @@ const Dashome = () => {
 
 
 
-<div className={cn(' grid-cols-1 lg:grid  h-full  lg:grid-cols-[2fr_1fr]    md:grid md:grid-cols-[2fr_1fr] relative', collapsed && 'lg:grid-cols-1  md:grid-cols-1' )} >
+<div className={cn(' h-[100vh] grid-cols-1 lg:grid    lg:grid-cols-[2fr_1fr]    md:grid md:grid-cols-[2fr_1fr] relative', collapsed && 'lg:grid-cols-1  md:grid-cols-1' )} >
 
 {
       collapsed && ( 
@@ -31,7 +31,7 @@ const Dashome = () => {
     
     <UserProfile/>
     </div>
-    <div className={cn('col-span-1 w-full  border-[#b28228] border-1 border-l  hidden   md:block  ', collapsed && 'hidden  md:hidden', !collapsed && 'lg:block ') }>
+      <div className={cn(' col-span-1 w-full border-[#b28228]  border-l  hidden   md:block  ', collapsed && 'hidden  md:hidden', !collapsed && 'lg:block ') }>
         <CreateStream/>
     </div>
 </div>

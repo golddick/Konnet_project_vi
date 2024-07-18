@@ -5,6 +5,7 @@ import FollowBtn from '../FollowBtn'
 import EditBtn from '@/app/(browser)/StreamProfile/[streamName]/_container/EditBtn'
 import UserEditBtn from '@/app/(creatorDashboard)/_component/EditBtn'
 import { Analystic } from '../Analytic/Analystic'
+import Link from 'next/link'
 
 const ContactInfo = () => {
     const admin = true
@@ -41,8 +42,11 @@ const ContactInfo = () => {
        
         {
           admin ? (
-            // <div><Analystic/></div>
-            <div>Ana </div>
+          <Link href='/Dashboard/kulture/CreateStream'>
+           <Button variant='goldBTN' size='sm' className='flex lg:hidden md:hidden'>
+            Create Stream
+           </Button>
+          </Link>
           ):(
             <FollowBtn/>
           )

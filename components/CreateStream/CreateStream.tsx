@@ -13,7 +13,7 @@ const CreateStream = () => {
   const {variant, onExpand} = CreatorUserChatSiderbar((state) => state)
 
   return (
-    <div className='h-full '>
+    <div className='flex flex-col h-[calc(100vh-80px)]   overflow-scroll'>
       <StreamHeader/>
 
       {
