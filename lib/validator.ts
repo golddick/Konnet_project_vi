@@ -33,27 +33,36 @@ export const CreateStreamSchema = z.object({
   address: z.string({
     message:'Streaming location needed'
   }),
-  time: z.string({
+  endTime: z.string({
     message:'set event time '
   }),
   date: z.number({
     message:'pick an event date '
   }),
-  price: z.string({
-    message:'set ticket fee'
-  }),
-  participant: z.string({
-    message:'add participants'
-  }),
-  organizers: z.string({
-    message:'add organizers'
-  }),
+  price: z.string(),
+  isFree: z.boolean(),
+  participant: z.string(),
+  organizers: z.string(),
   eventImg: z.string({
     message:'add event Img'
   }),
   thumbVideo: z.string({
     message:'add event video'
   }),
+
+
+  email: z.string().regex(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, {
+    message: "Invalid email format",
+  }),
+  creatorName: z.string(),
+
+
+  streamRMTPurl: z.string(),
+  streamRMTPkey: z.string(),
+
+ bankName: z.string(),
+ accountName: z.string(),
+ accountNumber: z.number(),
 
   
 });
